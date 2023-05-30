@@ -1,0 +1,27 @@
+create instance
+amazon linux
+
+security open link
+add traffic to http and https
+
+connect -> connect
+
+switch to linux use = sudo su -
+update system = yum update -y
+install web server = yum install -y httpd
+
+check server status using = systemctl status httpd
+new fol = mkdir temp
+cd temp/
+
+wget 'link'
+ls -lrt  check files
+unzip file.zip
+ 
+cd move new file
+mv * /var/www/html/
+cd /var/www/html/
+
+systemctl status httpd
+systemctl enable httpd
+systemctl start httpd
