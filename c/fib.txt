@@ -1,20 +1,13 @@
-public class InsertFibo{      
-    public  void insertList(Integer n){
-        List<Fibonacci_c> tmplist=new List<Fibonacci_c>();
-        Integer next;
-        Integer first=0;
-        Integer second=1;
-        for(Integer i=0;i<n;i++){
-            Fibonacci_c obj=new Fibonacci_c();
-                next=first+second;
-                obj.Name=string.valueof(next);
-                tmplist.add(obj);
-                first=second;
-                second=next;    
+public class FibonacciSeries{
+    public void display(){
+        Integer n1=0,n2=1,n3,i,count=10;
+        for(i=2;i<count;i++){
+            n3=n1+n2;
+            System.debug(''+n3);
+            n1=n2;
+            n2=n3;
         }
-        insert tmplist;
-    }   
+    }
 }
-
-InsertFibo objfib = new InsertFibo();
-objfib.display();
+// FibonacciSeries objfib = new FibonacciSeries();
+// objfib.display();
