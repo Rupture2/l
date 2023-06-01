@@ -1,27 +1,24 @@
 create instance
-amazon linux
+ubuntu
 
 security open link
 add traffic to http and https
 
 connect -> connect
 
-switch to linux use = sudo su -
-update system = yum update -y
-install web server = yum install -y httpd
+switch to linux use = sudo su 
+apt-get install apache2
 
-check server status using = systemctl status httpd
-new fol = mkdir temp
-cd temp/
+systemctl start apache2
+systemctl status apache2
 
-wget 'link'
-ls -lrt  check files
-unzip file.zip
- 
-cd move new file
+wget link
+ls
+apt-get install unzip
+unzip filename
+
+ls
+cd extracted file name
 mv * /var/www/html/
 cd /var/www/html/
-
-systemctl status httpd
-systemctl enable httpd
-systemctl start httpd
+ls
